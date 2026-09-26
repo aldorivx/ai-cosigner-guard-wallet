@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "module": "server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server.ts",
+    "start": "bun run server.ts",
+    "test": "bun test test/backend.test.ts",
+    "simulate": "bun run scripts/simulate.ts",
+    "live-test": "bun run scripts/live-test.ts",
+    "export-abi": "bun run scripts/export-abi.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "viem": "^2.56.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1"
+  }
+}
